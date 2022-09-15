@@ -131,23 +131,11 @@ h5{
 
 /* crtice */
 .title-left::after{
-    /* content: "";
-    width: 30px;
-    position: absolute;
-    top:50%;
-    height: 1px;
-    background: #d0cece;
-    border-radius: 50%; */
+
     display: none;
 }
 .title-right::before{
-    /* content: "";
-    width: 30px;
-    position: absolute;
-    top:50%;
-    height: 1px;
-    background: #d0cece;
-    border-radius: 50%; */
+   
     display: none;
 
 }
@@ -180,30 +168,12 @@ h5{
 }
 /* kuglica */
 #title-left-1::before{
-    /* content: '';
-    position: absolute;
-    right: -8%;
-    top: 22%;
-    width: 8px;
-    height: 8px;
-    background:  rgb(176, 96, 123);
-    border: 2px solid  rgb(176, 96, 123);
-    border-radius: 50%;
-    z-index: 99; */
+  
     display: none;
 }
 
 #title-right-1::after{
-    /* content: '';
-    position: absolute;
-    right: 105%;
-    top: 22%;
-    width: 8px;
-    height: 8px;
-    background:rgb(176, 96, 123);
-    border: 2px solid rgb(176, 96, 123);
-    border-radius: 50%;
-    z-index: 99; */
+   
     display: none;
 } */
 progress{
