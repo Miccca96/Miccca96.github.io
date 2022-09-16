@@ -5,7 +5,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
+    width: 100%;
 }
 /* crta */
 .page::after{
@@ -13,22 +13,26 @@
     position: absolute;
     width: 2px;
     height: 130%;
-    top:17%;
+    top:calc(20% +10px);
     left: 50%;
     background: #d0cece;
 }
 h5{
     position: relative;
 }
+.title-left{
+    margin-left: 2px;
+}
 /* crtice */
 .title-left::after{
     content: "";
-    width: 30px;
+    width: calc(6% - 10px);
     position: absolute;
     top:50%;
     height: 1px;
     background: #d0cece;
     border-radius: 50%;
+    /* margin-left: 5px; */
     
 }
 .title-right::before{
@@ -53,13 +57,13 @@ h5{
 }
 .left{
     position: static;
-    width: 47%;
+    width: 48%;
     text-align: right;
     float: left;
 }
 .right{
     position: relative;
-    width: 47%;
+    width: 48%;
     text-align: left;
     float: right;
 
@@ -69,10 +73,14 @@ h5{
     font-size: large;
 }
 /* kuglica */
+.title-left-1{
+    margin-left: 5px;
+}
+
 #title-left-1::before{
     content: '';
     position: absolute;
-    right: -8%;
+    right: calc(-4.4% - 5px);
     top: 22%;
     width: 8px;
     height: 8px;
@@ -81,11 +89,14 @@ h5{
     border-radius: 50%;
     z-index: 99;
 }
+.title-right-1{
+    margin-right: 5px;
+}
 
 #title-right-1::after{
     content: '';
     position: absolute;
-    right: 105%;
+    right: calc(103.9% - 5px);
     top: 22%;
     width: 8px;
     height: 8px;
@@ -102,7 +113,12 @@ progress{
 ul{
     padding: 3%;
 }
-@media only screen and (max-width:999px) {
+
+.container {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:600px) {
     /* crta */
 .page::after{
     /* content: "";
@@ -127,6 +143,7 @@ h5{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 /* crtice */
@@ -151,13 +168,13 @@ h5{
 }
 .left{
     position: static;
-    width: 47%;
+    width: 100%;
     text-align: center;
     /* float: left; */
 }
 .right{
     position: relative;
-    width: 47%;
+    width: 100%;
     text-align: center;
     /* float: right; */
 
